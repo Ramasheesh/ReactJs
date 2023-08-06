@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    
+</body>
+<script type="text/babel">
+    //1:
+        // let ele = document.createElement("Hi");
+        // els.innerText = "Hello MAN";
+        let root = document.querySelector("#root");
+        // root.appendChild(ele);
+
+    //2: 
+        // let ele = React.createElement("Hi",{
+        //     children:"I'm Rama"
+        // })
+        // ReactDOM.render(ele,root);
+
+    //3:JSX Javascript + html
+            function Element(){
+                return(
+                    <h1>I'M RamAsheesh</h1>
+                )
+            }
+           ReactDOM.render(<Element/>,root)
+
+    </script>
+</html>
