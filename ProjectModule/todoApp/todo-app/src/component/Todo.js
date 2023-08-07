@@ -37,7 +37,7 @@ class Todo extends Component{
                     {this.state.tasks.map((taskObj)=>(
                         <li id={taskObj.id}>
                             <p>{taskObj.task}</p>
-                            <button onClick={()=> this.handeDelete(taskObj.id)}>Delete</button>
+                            <button onClick={ ()=> this.handeDelete(taskObj.id)}>Delete</button>
                         </li>
                     ))}
                 </ul>
