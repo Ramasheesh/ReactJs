@@ -28,12 +28,34 @@
         // ReactDOM.render(ele,root);
 
     //3:JSX Javascript + html
-            function Element(){
+            function Element1({name,age}){
                 return(
-                    <h1>I'M RamAsheesh</h1>
+                    <div>
+                        <h1>My name is: {name}</h1>
+                        <h2>My Age is: {age}</h2>
+
+                    </div>
                 )
             }
-           ReactDOM.render(<Element/>,root)
+            function Element2(){
+                return(
+                    <h2>how are you?</h2>
+                )
+            }
+            function Parent() {
+                return(
+                    <div>
+                        <Element1 name="Ramasheesh" age= "25"/>
+                        <Element1 name="Shiva" age= "25"/>
+                        <Element1 name="Harsh" age="21"/>
+                        <Element1 name="Priyanshu" age = "10"/>
+
+                        <Element2/>
+                        <Element2/>
+                    </div>
+                )
+            }
+           ReactDOM.render(<Parent/>,root)
 
     </script>
 </html>
